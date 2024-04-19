@@ -1,0 +1,43 @@
+.edit {
+  background: linear-gradient(30deg, dodgerblue, violet);
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -55%;
+  bottom: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.edit.edit-show {
+  opacity: 1;
+  z-index: 1;
+  top: 25%;
+  bottom: 25%;
+}
+
+.edit h4 {
+  color: white;
+  text-align: center;
+}
+
+.edit-btn-1 {
+  background-color: transparent;
+  color: red;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
